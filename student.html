@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>流程控制语句</title>
+<script type="text/javascript">
+ //第一步把之前的数据写成一个数组的形式,定义变量为 infos
+var infos = [
+    ['A','female','21','freshman'],
+    ['B','male','23','junior'],
+    ['C','male','24','senior'],
+    ['D','male','21','freshman'],
+    ['E','male','22','senior'],
+    ['F','male','21','freshman'],
+    ['G','male','22','sophomore'],
+    ['H','male','20','junior'],
+    ['I','male','20','freshman'],
+    ['J','male','20','junior']
+];
+ //第一次筛选，找出都是大一的信息
+infos.forEach((value,key) => {
+    if(value[3] == 'freshman'){
+        console.log(value);
+        if(value[1] == 'female'){
+            console.log(value[0]);
+        }
+    }
+});
+
+ //第二次筛选，找出都是女生的信息
+ 
+ 
+  
+</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+</head>
+<body>
+<div>
+  javascript
+  <p>javascript</p>
+  <div>jQuery</div>
+  <h5>PHP</h5>
+</div>
+<script type="text/javascript">
+ var divChilds = document.getElementsByTagName('div')[0].childNodes;
+ for(var i=0; i<divChilds.length; i++)
+ {
+    document.write('第'+ i + '个子节点的名字:' + divChilds[i].nodeName + '<br/>');
+    document.write('第'+ i + '个子节点的值:' + divChilds[i].nodeValue + '<br/>');
+    document.write('第'+ i + '个子节点的类型:' + divChilds[i].nodeType + '<br/>');
+ }
+</script>
+</body>
+</html>

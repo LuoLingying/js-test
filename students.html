@@ -1,0 +1,65 @@
+<!DOCTYPE  HTML>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>流程控制语句</title>
+<script type="text/javascript">
+ //第一步把之前的数据写成一个数组的形式,定义变量为 infos
+ 
+var infos = [
+    {'name':'A','gender':'female','age':'21','grade':'freshman'},
+    {'name':'B','gender':'male','age':'23','grade':'junior'},
+    {'name':'C','gender':'male','age':'24','grade':'senior'},
+    {'name':'D','gender':'male','age':'21','grade':'freshman'},
+    {'name':'E','gender':'male','age':'22','grade':'senior'},
+    {'name':'F','gender':'male','age':'21','grade':'freshman'},
+    {'name':'G','gender':'male','age':'22','grade':'sophomore'},
+    {'name':'H','gender':'male','age':'20','grade':'junior'},
+    {'name':'I','gender':'male','age':'20','grade':'freshman'},
+    {'name':'J','gender':'male','age':'20','grade':'junior'}
+];
+/*
+var infos = new Array();
+infos[0] = ['A','female','21','freshman'];
+infos[1] = ['B','male','23','junior'];
+infos[2] = ['C','male','24','senior'];
+infos[3] = ['D','male','21','freshman'];
+infos[4] = ['E','male','22','senior'];
+infos[5] = ['F','male','21','freshman'];
+infos[6] = ['G','male','22','sophomore'];
+infos[7] = ['H','male','20','junior'];
+infos[8] = ['I','male','20','freshman'];
+infos[9] = ['J','male','20','junior'];
+*/ //第一次筛选，找出都是大一的信息
+ /*
+ foreach(infos as value){
+     if(value['grade'] == 'freshman'){
+         console.log(value);
+     }
+ }
+ */
+
+infos.map(info => {
+    if (info.grade=='freshman') {
+        console.log(info);
+        if (info.gender=='female') {
+            console.log(info.name);
+        }
+    }
+});
+//  for(let i=0, len=infos.length; i<len; i++){
+//      if(infos[i].grade == 'freshman'){
+//         console.log(infos[i]);
+//         if(infos[i].gender == 'female'){
+//             console.log(infos[i].name);
+//         }
+//      }
+//  }
+  
+ //第二次筛选，找出都是女生的信息
+ 
+</script>
+</head>
+<body>
+</body>
+</html>
